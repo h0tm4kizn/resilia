@@ -1,0 +1,241 @@
+html:has(.login-page),
+body:has(.login-page),
+#root:has(.login-page) {
+  background: #fff9f2;
+}
+
+.login-page {
+  position: relative;
+  display: block;
+  min-height: 100dvh;
+  overflow: hidden;
+  padding: 28px clamp(24px, 3.4vw, 48px) 120px;
+  background: #fff9f2;
+  color: var(--forest);
+}
+
+.login-logo {
+  position: relative;
+  z-index: 2;
+}
+
+.login-logo .logo {
+  color: var(--forest);
+  font-size: 28px;
+}
+
+.login-logo .logo-image {
+  width: 46px;
+  height: 46px;
+}
+
+.login-topbar {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 900px);
+  margin: 24px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.login-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-back:hover {
+  color: var(--forest);
+}
+
+.login-back:focus-visible,
+.login-page .role:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.login-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 48px auto 54px;
+  text-align: left;
+}
+
+.login-form-content {
+  width: min(100%, 900px);
+  margin-inline: auto;
+}
+
+.login-heading .section-kicker {
+  margin-bottom: 14px;
+}
+
+.login-heading h1 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(46px, 6vw, 76px);
+  letter-spacing: -0.065em;
+  line-height: 1;
+}
+
+.login-heading p {
+  max-width: 620px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.login-page .role-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 42px 0 26px;
+  text-align: left;
+}
+
+.login-page .role {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 116px;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #e1d8ca;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.48);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.login-page .role:hover {
+  border-color: #b8c99c;
+  background: #f5f8e9;
+  transform: translateY(-2px);
+}
+
+.login-page .role.active {
+  border-color: var(--forest);
+  background: #f4f8df;
+  box-shadow: 0 0 0 1px var(--forest);
+}
+
+.login-page .role-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #f7e8c9;
+  color: var(--forest);
+}
+
+.login-page .role-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.login-page .role-copy {
+  display: block;
+  min-width: 0;
+}
+
+.login-page .role-copy b,
+.login-page .role-copy small {
+  display: block;
+}
+
+.login-page .role-copy b {
+  color: var(--forest);
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.login-page .role-copy small {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.login-page .login-form-content > .btn {
+  display: flex;
+  width: min(100%, 480px);
+  margin: 0 auto;
+  min-height: 58px;
+  justify-content: center;
+  border-radius: 999px;
+  font-size: 16px;
+}
+
+.login-landscape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: clamp(220px, 18vw, 300px);
+  overflow: visible;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.login-land-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .login-page {
+    padding: 24px 20px 104px;
+  }
+
+  .login-content {
+    margin-top: 58px;
+  }
+
+  .login-topbar {
+    margin-top: 22px;
+  }
+
+  .login-back {
+    margin-left: 0;
+  }
+
+  .login-heading h1 {
+    font-size: clamp(42px, 13vw, 62px);
+  }
+
+  .login-heading p {
+    font-size: 15px;
+  }
+
+  .login-page .role-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .login-page .role {
+    min-height: 96px;
+    padding: 16px;
+  }
+
+  .login-landscape {
+    height: 220px;
+  }
+}
