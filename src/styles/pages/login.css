@@ -50,9 +50,7 @@ body:has(.login-page),
   font-weight: 600;
 }
 
-.login-back:hover {
-  color: var(--forest);
-}
+.login-back:hover { color: var(--forest); }
 
 .login-back:focus-visible,
 .login-page .role:focus-visible {
@@ -73,9 +71,7 @@ body:has(.login-page),
   margin-inline: auto;
 }
 
-.login-heading .section-kicker {
-  margin-bottom: 14px;
-}
+.login-heading .section-kicker { margin-bottom: 14px; }
 
 .login-heading h1 {
   margin: 0;
@@ -151,9 +147,7 @@ body:has(.login-page),
 }
 
 .login-page .role-copy b,
-.login-page .role-copy small {
-  display: block;
-}
+.login-page .role-copy small { display: block; }
 
 .login-page .role-copy b {
   color: var(--forest);
@@ -200,42 +194,20 @@ body:has(.login-page),
 }
 
 @media (max-width: 700px) {
-  .login-page {
-    padding: 24px 20px 104px;
-  }
-
-  .login-content {
-    margin-top: 58px;
-  }
-
-  .login-topbar {
-    margin-top: 22px;
-  }
-
-  .login-back {
-    margin-left: 0;
-  }
-
-  .login-heading h1 {
-    font-size: clamp(42px, 13vw, 62px);
-  }
-
-  .login-heading p {
-    font-size: 15px;
-  }
-
+  .login-page { padding: 24px 20px 104px; }
+  .login-content { margin-top: 58px; }
+  .login-topbar { margin-top: 22px; }
+  .login-back { margin-left: 0; }
+  .login-heading h1 { font-size: clamp(42px, 13vw, 62px); }
+  .login-heading p { font-size: 15px; }
   .login-page .role-list {
     grid-template-columns: 1fr;
     gap: 12px;
     margin-top: 32px;
   }
-
   .login-page .role {
     min-height: 96px;
     padding: 16px;
   }
-
-  .login-landscape {
-    height: 220px;
-  }
+  .login-landscape { height: 220px; }
 }

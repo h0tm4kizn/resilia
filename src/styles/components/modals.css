@@ -1,0 +1,78 @@
+.modal-action-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+  padding-top: 4px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 40, 30, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+  z-index: 20;
+  padding: 20px;
+}
+
+.modal {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  max-width: 470px;
+  width: 100%;
+  max-height: min(760px, calc(100dvh - 40px));
+  overflow-y: auto;
+  overflow-x: visible;
+  position: relative;
+}
+
+.modal > .section-kicker {
+  display: block;
+  margin: 0 34px 8px 0;
+}
+
+.modal > h2 {
+  max-width: calc(100% - 12px);
+  margin: 0 0 14px;
+  line-height: 1.15;
+}
+
+.modal > .muted { margin: 0 0 18px; line-height: 1.5; }
+.modal h2 { font-size: 30px; letter-spacing: -0.06em; margin: 9px 0 3px; }
+
+.modal label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 17px 0;
+}
+
+.modal input:not([type="checkbox"]),
+.modal select {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 9px;
+  background: #fff;
+  margin-top: 6px;
+  outline-color: var(--olive);
+}
+
+.modal .consent {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.modal-close {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  background: none;
+  color: var(--muted);
+}

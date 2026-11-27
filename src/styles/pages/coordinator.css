@@ -1,0 +1,39 @@
+.coordinator-activity-panel {
+  margin-top: 18px;
+}
+
+.coordinator-filters {
+  align-items: center;
+}
+
+.coordinator-filters .search-field {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 42px;
+}
+
+.coordinator-filters .search-field input {
+  width: 100%;
+  min-width: 0;
+}
+
+.coordinator-review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.coordinator-review-actions .btn {
+  min-height: 44px;
+}
+
+.coordinator-collaboration-card {
+  width: 100%;
+}
+
+.coordinator-researchers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}

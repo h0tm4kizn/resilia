@@ -1,0 +1,43 @@
+.app-shell {
+  width: 100%;
+  min-height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: #f3f1eb;
+  display: flex;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--workspace-bg);
+  --white: #ffffff;
+  --line: var(--workspace-border);
+  --muted: var(--workspace-muted);
+}
+
+.app-content {
+  max-width: 1150px;
+  margin: auto;
+  padding: 48px 38px;
+}
+
+.app-content:has(.barangay-dashboard),
+.app-content:has(.workspace-page) {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  min-height: 100%;
+  padding: 28px 32px 40px;
+  background: var(--workspace-bg);
+}
+
+.workspace-page {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+}

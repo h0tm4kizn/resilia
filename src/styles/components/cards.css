@@ -1,0 +1,68 @@
+.dashboard-card {
+  min-width: 0;
+  min-height: 0;
+  padding: 18px 22px;
+  border: 1px solid #e3ddd2;
+  border-radius: 20px;
+  background: rgba(255, 252, 247, .84);
+  box-shadow: 0 10px 30px rgba(54, 70, 53, .04);
+}
+
+.dashboard-card-heading { justify-content: space-between; gap: 16px; }
+.dashboard-card-heading h2 { margin: 0; color: #102e27; font-size: 19px; letter-spacing: -.035em; }
+.dashboard-card-heading > svg { color: #4b5a52; }
+
+.stat-grid {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.stat-grid:not(.admin-user-summary) { grid-template-columns: repeat(4, 1fr); }
+
+.stat-card,
+.panel {
+  background: var(--workspace-card);
+  border: 1px solid var(--workspace-border);
+  border-radius: 15px;
+}
+
+.stat-card { padding: 22px; }
+.stat-card > span { font-size: 30px; letter-spacing: -0.06em; color: var(--forest); font-weight: 700; }
+.stat-card p { margin: 2px 0 15px; font-size: 12px; font-weight: 700; }
+.stat-card small { color: var(--olive); font-size: 10px; }
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.dashboard-grid > .panel,
+.dashboard-grid > .dashboard-card,
+.barangay-middle-grid > .dashboard-card,
+.barangay-bottom-grid > .dashboard-card,
+
+.panel { padding: 24px; }
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.panel h2 { font-size: 20px; letter-spacing: -0.04em; margin: 5px 0 0; }
+.progress-value { color: var(--terra); font-weight: 700; font-size: 18px; }
+
+.panel-link {
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--forest);
+  margin-top: 20px;
+}

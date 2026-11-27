@@ -48,8 +48,7 @@ import {
 } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import type { LucideIcon } from "lucide-react";
-import "./styles.css";
-import "./login.css";
+import "./styles/main.css";
 import resiliaLogo from "./images/Resilia-R.webp";
 import heroImage from "./images/hero.webp";
 import peopleImage from "./images/people.webp";

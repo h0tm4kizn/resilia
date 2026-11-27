@@ -1,0 +1,73 @@
+.status-select {
+  position: relative;
+  width: 170px;
+  z-index: 5;
+}
+
+.modal .status-select { width: 100%; }
+
+.status-select-trigger {
+  width: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 14px;
+  border: 1px solid var(--workspace-border);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--forest);
+  text-align: left;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.status-select-trigger svg { transition: transform .18s ease; }
+.status-select-trigger[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+.status-select-trigger:hover,
+.status-select-trigger[aria-expanded="true"] { border-color: var(--olive); }
+
+.status-select-trigger:focus-visible,
+.status-select-menu button:focus-visible,
+.submission-row:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.status-select-menu {
+  position: fixed;
+  padding: 6px;
+  border: 1px solid #dfe6df;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(36, 71, 53, .12);
+  overflow: visible;
+  overflow-x: hidden;
+  z-index: 30;
+}
+
+.status-select-menu button {
+  width: 100%;
+  min-height: 40px;
+  padding: 10px 13px;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--forest);
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.25;
+  white-space: nowrap;
+  transition: background-color .16s ease, color .16s ease;
+}
+
+.status-select-menu button:hover {
+  background: #f3f8e8;
+  color: var(--forest);
+}
+
+.status-select-menu button.selected {
+  background: #e7f0d0;
+  color: var(--forest);
+}

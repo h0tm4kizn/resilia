@@ -1,0 +1,28 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 9px;
+  background: #e7ede3;
+  color: var(--olive);
+  border-radius: 99px;
+  padding: 5px 9px;
+}
+
+.badge.in-research {
+  background: #d9ead6;
+  color: #245c3b;
+}
+
+.badge.matching {
+  background: #e4ebcc;
+  color: #557332;
+}
+
+.badge.under-review {
+  background: #f6dfbd;
+  color: #9a6424;
+}
